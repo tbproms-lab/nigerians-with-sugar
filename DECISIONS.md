@@ -3,3 +3,5 @@ I decided to go with a many to many join table for establishing the connections 
 Glycemic load is calculated on each run of dish as this avoids a static GL if perhaps a user were to swap an ingredient to replace another in a dish, the GL will update and reload based on this new information
 
 Swap_ingredient will reference dish ingredients, because swapping an ingredient in a dish only makes sense in the context of that singular dish. It will need to access ingredients as well in order to replace it in the dish ingredients.
+
+User_preferences shouldn't be JSONB since it's a fixed tag set, the same tags on the dishses (sweet, spicy, vegan, vegetarian)- same many-to-many shape as ingredients. It need a tags table + join tables for both users and dishes.
