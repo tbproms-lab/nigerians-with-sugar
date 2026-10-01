@@ -15,3 +15,4 @@ Made a few decisisons (and questions) while creating the schema today 9/27/26:
 - GL is computed on read, not stored
 - Open problem: converting units like "cup" into grams so GL can be calculated
 
+Verified the composite foreign key on swaps by testing an invalid insert — Postgres rejected (moi moi, white rice) since that pair doesn't exist in dish_ingredients. Confirms the constraint, not application code, enforces that swaps only apply to ingredients a dish actually uses.
