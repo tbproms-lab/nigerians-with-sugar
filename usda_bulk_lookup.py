@@ -6,8 +6,12 @@
 
 import requests
 import time
+import os
+from dotenv import load_dotenv
 
-API_KEY = "OAxgd1SPfZbdTgSuJqBJ5A1lPoP6OsyobSNuk2kl"  # move to an env var before committing
+load_dotenv()
+API_KEY = os.environ["USDA_API_KEY"]
+
 
 INGREDIENTS = [
     "plum tomato", "red bell pepper", "red onion", "scotch bonnet pepper",

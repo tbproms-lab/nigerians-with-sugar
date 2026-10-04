@@ -51,3 +51,8 @@ Product scope
 
 Add/remove-ingredient ("what if I skip this") is a request-time GL calculation, not an edit to a dish's real recipe — no new table needed yet.
 Stock was simplified to water in the jollof recipe, to avoid treating a recipe-as-ingredient.
+
+End of 10/4/session
+Ingredient GI data sourced from glycemic-index.net / logifoodcoach.com / calorienaija.com, with honest NULL for anything marked "Not known"
+Beef split into species (beef, goat, lamb, pork) rather than kept as mislabeled subcategories
+Carbs/macros still pending — to be filled in via the USDA lookup script, ingredient by ingredient, as you confirm matches
