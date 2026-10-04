@@ -25,10 +25,10 @@ CREATE TABLE user_tag_preferences (
 CREATE TABLE ingredients (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL UNIQUE,
-    gi FLOAT NOT NULL DEFAULT 0,
+    gi FLOAT,
     calories FLOAT NULL,
     protein FLOAT NULL,
-    carbs FLOAT NOT NULL,
+    carbs FLOAT NULL,
     fat FLOAT NULL,
     fiber FLOAT NULL,
     sugar FLOAT NULL,
