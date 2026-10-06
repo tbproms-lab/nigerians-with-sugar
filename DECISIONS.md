@@ -56,3 +56,74 @@ End of 10/4/session
 Ingredient GI data sourced from glycemic-index.net / logifoodcoach.com / calorienaija.com, with honest NULL for anything marked "Not known"
 Beef split into species (beef, goat, lamb, pork) rather than kept as mislabeled subcategories
 Carbs/macros still pending — to be filled in via the USDA lookup script, ingredient by ingredient, as you confirm matches
+
+
+Dishes with no calories or protein or fat values:
+       name        | carbs | calories | protein |  fat  
+-------------------+-------+----------+---------+-------
+ baking soda       |     0 |          |         |      
+ brown rice        |  76.7 |          |    7.25 |  3.31
+ green beans       |  7.41 |          |    1.97 | 0.275
+ plantain          |    31 |          |    1.16 | 0.893
+ sweet potato      |  17.3 |          |    1.58 | 0.375
+ tomato            |  3.84 |          |   0.696 | 0.425
+ all-purpose flour |  77.3 |          |         |      
+ apple             |  15.7 |          |         |      
+ banana            |  22.8 |          |         |      
+ basil             |  2.65 |          |         |      
+ bay leaves        |    75 |          |         |      
+ bell pepper       |  6.65 |          |   0.896 | 0.126
+ beef              |  0.18 |          |    21.1 |  6.46
+ cashew nuts       |  36.3 |          |    17.4 |  38.9
+ cauliflower       |  4.72 |          |    1.64 | 0.238
+ celery            |  3.32 |          |   0.492 | 0.162
+ chickpeas         |  60.4 |          |    21.3 |  6.27
+ cucumber          |  2.95 |          |   0.625 | 0.178
+ pineapple         |  14.1 |          |   0.461 | 0.211
+ peanut            |  26.5 |          |    23.2 |  43.3
+(20 rows)
+
+Next session (10/6): find real carbs data for Nigerian-specific ingredients with GI but no carbs (garri, egusi seeds, ogbono, iru, ogiri, stockfish, crayfish, bitterleaf, etc.) — USDA has no match, so this needs an alternate source (maybe Nigerian food composition tables or published nutrition studies).
+
+Dishes with no carbs values: 
+id |                 name                 
+----+--------------------------------------
+  3 | olive oil
+  5 | habanero
+  6 | scotch bonnet
+  7 | egusi seeds
+  9 | ogbono
+ 10 | ugu leaf
+ 11 | oha leaf
+ 12 | bitterleaf
+ 13 | uziza leaf
+ 14 | utazi leaf
+ 16 | stockfish
+ 17 | iru
+ 18 | tomato paste
+ 19 | ogiri
+ 20 | basmati rice
+ 21 | parboiled rice
+ 23 | garri
+ 33 | cayenne pepper
+ 34 | dried prawn
+ 39 | ewedu
+ 40 | black-eyed beans
+ 41 | honey beans
+ 43 | cocoyam
+ 44 | chicken
+ 54 | rolled oats
+ 55 | quick oats
+ 58 | oat flour
+ 71 | sweetener (sugar substitute)
+ 74 | akamu/ogi
+ 81 | african star apple (agbalumo, udara)
+ 83 | ofada rice
+ 84 | amala
+ 85 | semovita
+ 86 | pounded yam
+ 87 | fufu
+ 88 | sweet yogurt
+ 90 | milk
+ 68 | spaghetti
+(38 rows)
