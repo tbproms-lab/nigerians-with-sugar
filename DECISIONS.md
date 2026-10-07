@@ -127,3 +127,6 @@ id |                 name
  90 | milk
  68 | spaghetti
 (38 rows)
+
+10/6/26
+Widened ingredients.source to handle multi-source citations, and added FAO/WAHO 2010 as a third nutrition source to fill gaps USDA couldn't cover for West African staples. Fixed bitterleaf and filled in real data for 8 more Nigerian-specific ingredients (egusi seeds, black-eyed beans, cocoyam, chicken, cassava, taro yam, milk, ewedu), plus added 10 new ones (garden egg, avocado, moringa, millet, sorghum, cowpea leaves, palm nuts, watermelon, guava, papaya) with carbs/macros but no GI data. Removed sweet yogurt since no source represented it accurately. Added three missing spices (curry powder, dried thyme, black pepper) using real USDA values from an earlier run. Drafted the full dish_ingredients mapping for jollof rice (14 ingredients, including mapping "converted rice" to parboiled rice), ready to run and verify tomorrow.

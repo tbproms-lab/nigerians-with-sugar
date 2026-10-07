@@ -34,7 +34,7 @@ CREATE TABLE ingredients (
     sugar FLOAT NULL,
     sodium FLOAT NULL,
     cholesterol FLOAT NULL,
-    source VARCHAR(255) NULL,
+    source VARCHAR(500) NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
